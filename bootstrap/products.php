@@ -1,97 +1,178 @@
-<?php include('library.php'); ?>
-<!DOCTYPE html>
-<html lang="en">
-	<head>
-	    <meta charset="utf-8">
-	    <title><?php echo(TITLE . " ::: " . QUOTE) ?></title>
-	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	    <meta name="description" content="">
-	    <meta name="author" content="Sanghyun Lee">
-	    <!-- Le styles -->
-    <link href="css/bootstrap.css" rel="stylesheet">
-    <link href="css/foursons.css" rel="stylesheet">
-    <link href="css/bootstrap-responsive.css" rel="stylesheet">
-	    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
-	    <!--[if lt IE 9]>
-	      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-	    <![endif]-->
-
-	    <!-- Fav and touch icons -->
-		<link rel="apple-touch-icon-precomposed" sizes="144x144" href="ico/apple-touch-icon-144-precomposed.png">
-		<link rel="apple-touch-icon-precomposed" sizes="114x114" href="ico/apple-touch-icon-114-precomposed.png">
-		<link rel="apple-touch-icon-precomposed" sizes="72x72" href="ico/apple-touch-icon-72-precomposed.png">
-		<link rel="apple-touch-icon-precomposed" href="ico/apple-touch-icon-57-precomposed.png">
-		<link rel="shortcut icon" href="ico/favicon.png">
-	</head>
-
-	<body>
-
-		<div class="container">
-
-      		<?php include('header.php'); ?>
-      		<div class="bs-docs-grid">
-	      		<div class="row-fluid show-grid">
-	      			<div class="span4 well foursons">
-	      				<h3 class="text-center">Regular $135 <small>4 weeks</small></h3>
-	      				<dl>
-	      					<dt>Red</dt>
-	      					<dd>(A) Chianti, Pinot Noir</dd>
-	      					<dd>(B) Malbec, Merlot</dd>
-	      					<dd>(C) Cabernet Sauvignon, Barolo, Shiraz</dd>
-	      					<dt>White</dt>
-	      					<dd>(A) Pinot Grigio, Sauvignon Blanc</dd>
-	      					<dd>(B) Gewurztraminer, Riesling</dd>
-	      					<dd>(C) Chardonnay</dd>
-	      				</dl>
-	      			</div>
-	      			<div class="span4 well foursons">
-	      				<h3 class="text-center">Premium $170 <small>6 weeks</small></h3>
-	      				<dl>
-	      					<dt>Red</dt>
-	      					<dd>(A) California Pinot Noir</dd>
-	      					<dd>(B) Chilean Malbec, French Merlot</dd>
-	      					<dd>(C) Amarone, Australian Cabernet Sauvignon, Italian Barolo, Australian Shiraz</dd>
-	      					<dt>White</dt>
-	      					<dd>(A) Italian Pinot Grigio, New Zealand Sauvignon Blanc</dd>
-	      					<dd>(B) German Gewurztraminer</dd>
-	      					<dd>(C) Australian Chardonnay</dd>
-	      				</dl>
-	      			</div>
-	      			<div class="span4 well foursons">
-	      				<h3 class="text-center">Deluxe $210 <small>8 weeks</small></h3>
-	      				<dl>
-	      					<dt>Red</dt>
-	      					<dd>(A) New Zealand Pinot Noir</dd>
-	      					<dd>(B) Chilean Malbec, Chilean Merlot</dd>
-	      					<dd>(C) Amarone della Valpolicella, California Cabernet Sauvignon, California Syrah</dd>
-	      					<dt>White</dt>
-	      					<dd>(A) Australian Sauvignon Blanc, Italian Pinot Grigio</dd>
-	      					<dd>(B) German Riesling Gewurztraminer</dd>
-	      					<dd>(C) Australian Chardonnay</dd>
-	      				</dl>
+<?php include('header.php'); ?>
+	      		<div class="row show-grid">
+	      			<div class="col-md-12 col-sm-12 col-xs-12 well foursons">
+	      				<div class="row well-foursons">
+	      					<h2>Deluxe $210 <small>8 weeks</small></h2>
+	      				</div>
+	      				<div class="row well-foursons">
+		      				<div class="col-md-6">
+		      					<dl>
+			      					<dt>Red</dt>
+	      							<dd>(A) New Zealand Pinot Noir</dd>
+	      							<dd>(B) Chilean Malbec, Chilean Merlot</dd>
+	      							<dd>(C) Amarone della Valpolicella, California Cabernet Sauvignon, California Syrah</dd>
+			      				</dl>
+		      				</div>
+		      				<div class="col-md-6">
+		      					<dl>
+		      						<dt>White</dt>
+	      							<dd>(A) Australian Sauvignon Blanc, Italian Pinot Grigio</dd>
+	      							<dd>(B) German Riesling Gewurztraminer</dd>
+	      							<dd>(C) Australian Chardonnay</dd>
+		      					</dl>
+		      				</div>	
+	      				</div>
 	      			</div>
 	      		</div>
-	      		<div class="row-fluid show-grid">
-	      			<div class="span4 well foursons">
-	      				<h3 class="text-center">Ice Wine $160/190 <small>6 weeks</small></h3>
-	      				<dl>
-	      					<dt>Red</dt>
-	      					<dd>Cabernet Franc</dd>
-	      					<dt>White</dt>
-	      					<dd>Riesling, Vidal</dd>
-	      				</dl>
+	      		<div class="row show-grid">
+	      			<div class="col-md-12 col-sm-12 col-xs-12 well foursons">
+	      				<div class="row well-foursons">
+	      					<h2>Premium $170 <small>6 weeks</small></h2>
+	      				</div>
+	      				<div class="row well-foursons">
+		      				<div class="col-md-6">
+		      					<dl>
+			      					<dt>Red</dt>
+	      							<dd>(A) California Pinot Noir</dd>
+	      							<dd>(B) Chilean Malbec, French Merlot</dd>
+	      							<dd>(C) Amarone, Australian Cabernet Sauvignon, Italian Barolo, Australian Shiraz</dd>
+			      				</dl>
+		      				</div>
+		      				<div class="col-md-6">
+		      					<dl>
+		      						<dt>White</dt>
+	      							<dd>(A) Italian Pinot Grigio, New Zealand Sauvignon Blanc</dd>
+	      							<dd>(B) German Gewurztraminer</dd>
+	      							<dd>(C) Australian Chardonnay</dd>
+		      					</dl>
+		      				</div>	
+	      				</div>
 	      			</div>
-	      			<div class="span4 well foursons">
-	      				<h3 class="text-center">Rose/Blush $150 <small>4 - 6 weeks</small></h3>
-	      				<dl>
-	      					<dt></dt>
-	      					<dd>Zinfandel Blush, Green Apple Gewurztraminer, Strawberry White Zinfandel, Kiwi Melon Pinot Grigio</dd>
-	      				</dl>
+	      		</div>
+      			<div class="row show-grid">
+	      			<div class="col-md-12 col-sm-12 col-xs-12 well foursons">
+	      				<div class="row well-foursons">
+	      					<h2>Regular $135 <small>4 weeks</small></h2>
+	      				</div>
+	      				<div class="row well-foursons">	
+	      					<div class="col-md-4 col-md-offset-1">
+								<div class="col-md-12 well well-large table foursons">
+						      		<table class="table table-striped">
+						              	<thead>
+						                	<tr>
+						                  		<th colspan="2">Red</th>
+						               		</tr>
+						              </thead>
+						              <tbody>
+						                	<tr>
+						                  		<td rowspan="2">A</td>
+						                  		<td>Chianti</td>
+						                	</tr>
+						                	<tr>
+						                		<td>Pinot Noir</td>
+						                	</tr>
+						               		<tr>
+						                  		<td rowspan="2">B</td>
+						                  		<td>Malbec</td>
+						                	</tr>
+						                	<tr>
+						                		<td>Merlot</td>
+						                	</tr>
+						                	<tr>
+						                  		<td rowspan="3">C</td>
+						                  		<td>Cabernet Sauvignon</td>
+						                	</tr>
+						                	<tr>
+						                		<td>Barolo</td>
+						                	</tr>
+						                	<tr>
+						                		<td>Shiraz</td>
+						                	</tr>
+						              	</tbody>
+						            </table>
+					        	</div>
+				        	</div>
+				        	<div class="col-md-4 col-md-offset-2">
+			      				<div class="col-md-12 well well-large table foursons">
+						      		<table class="table table-striped">
+						              	<thead>
+						                	<tr>
+						                  		<th colspan="2">White</th>
+						               		</tr>
+						              </thead>
+						              <tbody>
+						                	<tr>
+						                  		<td rowspan="2">A</td>
+						                  		<td>Pinot Grigio</td>
+						                	</tr>
+						                	<tr>
+						                		<td>Sauvignon Blanc</td>
+						                	</tr>
+						               		<tr>
+						                  		<td rowspan="2">B</td>
+						                  		<td>Gewurztraminer</td>
+						                	</tr>
+						                	<tr>
+						                		<td>Riesling</td>
+						                	</tr>
+						                	<tr>
+						                  		<td rowspan="3">C</td>
+						                  		<td>Chardonnay</td>
+						                	</tr>
+						                	<tr>
+						                		<td>Barolo</td>
+						                	</tr>
+						                	<tr>
+						                		<td>Shiraz</td>
+						                	</tr>
+						              	</tbody>
+						            </table>
+					        	</div>
+					        </div>
+	      				</div>
+	      			</div>
+	      		</div>
+	      		<div class="row show-grid">
+	      			<div class="col-md-6 col-sm-12 col-xs-12 well foursons">
+	      				<div class="row well-foursons">
+		      				<h2>Ice Wine $160/190 <small>6 weeks</small></h2>
+	      				</div>
+	      				<div class="row well-foursons">
+		      				<div class="col-md-6">
+		      					<dl>
+			      					<dt>Red</dt>
+	      							<dd>Cabernet Franc</dd>
+			      				</dl>
+		      				</div>
+		      				<div class="col-md-6">
+		      					<dl>
+		      						<dt>White</dt>
+	      							<dd>Riesling</dd>
+	      							<dd>Vidal</dd>
+		      					</dl>
+		      				</div>	
+	      				</div>
+	      			</div>
+	      			<div class="col-md-6 col-sm-12 col-xs-12 well foursons">
+	      				<div class="row well-foursons">
+	      					<h2>Rose/Blush $150 <small>4 - 6 weeks</small></h2>
+	      				</div>
+	      				<div class="row well-foursons">
+		      				<div class="col-md-12">
+		      					<dl>
+									<dt></dt>
+	      							<dd>Zinfandel Blush</dd>
+	      							<dd>Green Apple Gewurztraminer</dd>
+	      							<dd>Strawberry White Zinfandel</dd>
+	      							<dd>Kiwi Melon Pinot Grigio</dd>
+		      					</dl>
+		      				</div>	
+	      				</div>
 	      			</div>
 	      		</div>
 	      		<br />
 	      		<hr />
-	      		<div class="well well-large foursons">
+	      		<div class="well well-large table foursons">
 		      		<table class="table table-striped">
 		              <thead>
 		                <tr>
@@ -123,7 +204,7 @@
 		              </tbody>
 		            </table>
 	        	</div>
-	      	</div>
+	      	
 	      	<hr />
 	      	<?php include('footer.php'); ?>
       	</div> <!-- /container -->
