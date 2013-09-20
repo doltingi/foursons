@@ -1,5 +1,4 @@
 <?php include('header.php'); ?>
-
 			<!-- Jumbotron -->
 			<div class="jumbotron">
 				<h1>FS Special</h1>
@@ -28,6 +27,33 @@
 				</div>
 			</div>
 			<hr />
+			<div class="bs-example bs-example-tabs">
+			<ul class="nav nav-tabs" id="myTab">
+  <li class="active"><a href="#home" data-toggle="tab">Home</a></li>
+  <li><a href="#profile" data-toggle="tab">Profile</a></li>
+  <li><a href="#messages" data-toggle="tab">Messages</a></li>
+  <li><a href="#settings" data-toggle="tab">Settings</a></li>
+</ul>
+
+<div class="tab-content">
+  <div class="tab-pane active" id="home">aaaaa</div>
+  <div class="tab-pane" id="profile">bbbb</div>
+  <div class="tab-pane" id="messages">ccccc.</div>
+  <div class="tab-pane" id="settings">.ddddd</div>
+</div>
+</div>
+
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.js"></script>
+
+<script>
+$('#myTab a').click(function (e) {
+  e.preventDefault()
+  $(this).tab('show')
+})
+
+</script>
+
 			<?php include('footer.php'); ?>
 		</div> <!-- /container -->
 

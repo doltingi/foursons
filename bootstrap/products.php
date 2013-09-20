@@ -5,7 +5,7 @@
 	      					<h2>Deluxe $210 <small>8 weeks</small></h2>
 	      				</div>
 	      				<div class="row well-foursons">
-		      				<div class="col-md-6">
+		      				<div class="col-md-6 col-xs-12 col-sm-12">
 		      					<dl>
 			      					<dt>Red</dt>
 	      							<dd>(A) New Zealand Pinot Noir</dd>
@@ -13,7 +13,7 @@
 	      							<dd>(C) Amarone della Valpolicella, California Cabernet Sauvignon, California Syrah</dd>
 			      				</dl>
 		      				</div>
-		      				<div class="col-md-6">
+		      				<div class="col-md-6 col-xs-12 col-sm-12">
 		      					<dl>
 		      						<dt>White</dt>
 	      							<dd>(A) Australian Sauvignon Blanc, Italian Pinot Grigio</dd>
