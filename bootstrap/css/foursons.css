@@ -84,3 +84,38 @@ body {
 .well-foursons {
   padding: 10px;
 }
+.tangerine-title {
+  font-family : 'Tangerine', serif;
+  text-shadow: 4px 4px 4px #aaa;
+}
+
+.tangerine-text {
+  font-family : 'Tangerine', serif;
+  text-shadow : 4px 4px 4px #aaa;
+  font-size   : 16px;
+}
+
+@media (min-width: 992px) {
+  .tangerine-text {
+    font-family : 'Tangerine', serif;
+    text-shadow : 4px 4px 4px #aaa;
+    font-size   : 24px;
+  }
+}
+
+.form-signin {
+  padding         : 19px 29px 29px;
+  margin          : 0 auto 20px;
+  background-color    : #E0E0E0;
+  border          : 1px solid #e5e5e5;
+  -webkit-border-radius   : 5px;
+  -moz-border-radius    : 5px;
+  border-radius       : 5px;
+  -webkit-box-shadow    : 0 1px 2px rgba(0,0,0,.05);
+  -moz-box-shadow     : 0 1px 2px rgba(0,0,0,.05);
+  box-shadow        : 0 1px 2px rgba(0,0,0,.05);  
+}
+
+.foursons-middle {
+  vertical-align: bottom;
+}

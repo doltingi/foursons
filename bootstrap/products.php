@@ -55,85 +55,27 @@
 	      					<h2>Regular $135 <small>4 weeks</small></h2>
 	      				</div>
 	      				<div class="row well-foursons">	
-	      					<div class="col-md-4 col-md-offset-1">
-								<div class="col-md-12 well well-large table foursons">
-						      		<table class="table table-striped">
-						              	<thead>
-						                	<tr>
-						                  		<th colspan="2">Red</th>
-						               		</tr>
-						              </thead>
-						              <tbody>
-						                	<tr>
-						                  		<td rowspan="2">A</td>
-						                  		<td>Chianti</td>
-						                	</tr>
-						                	<tr>
-						                		<td>Pinot Noir</td>
-						                	</tr>
-						               		<tr>
-						                  		<td rowspan="2">B</td>
-						                  		<td>Malbec</td>
-						                	</tr>
-						                	<tr>
-						                		<td>Merlot</td>
-						                	</tr>
-						                	<tr>
-						                  		<td rowspan="3">C</td>
-						                  		<td>Cabernet Sauvignon</td>
-						                	</tr>
-						                	<tr>
-						                		<td>Barolo</td>
-						                	</tr>
-						                	<tr>
-						                		<td>Shiraz</td>
-						                	</tr>
-						              	</tbody>
-						            </table>
-					        	</div>
+	      					<div class="col-md-6">
+								<dl>
+									<dt>Red</dt>
+									<dd>(A) Chianti, Pinot Noir</dd>
+									<dd>(B) Malbec, Merlot</dd>
+									<dd><strong>C</strong> Cabernet Sauvignon, Barolo, Shiraz</dd>
+						        </dl>
 				        	</div>
-				        	<div class="col-md-4 col-md-offset-2">
-			      				<div class="col-md-12 well well-large table foursons">
-						      		<table class="table table-striped">
-						              	<thead>
-						                	<tr>
-						                  		<th colspan="2">White</th>
-						               		</tr>
-						              </thead>
-						              <tbody>
-						                	<tr>
-						                  		<td rowspan="2">A</td>
-						                  		<td>Pinot Grigio</td>
-						                	</tr>
-						                	<tr>
-						                		<td>Sauvignon Blanc</td>
-						                	</tr>
-						               		<tr>
-						                  		<td rowspan="2">B</td>
-						                  		<td>Gewurztraminer</td>
-						                	</tr>
-						                	<tr>
-						                		<td>Riesling</td>
-						                	</tr>
-						                	<tr>
-						                  		<td rowspan="3">C</td>
-						                  		<td>Chardonnay</td>
-						                	</tr>
-						                	<tr>
-						                		<td>Barolo</td>
-						                	</tr>
-						                	<tr>
-						                		<td>Shiraz</td>
-						                	</tr>
-						              	</tbody>
-						            </table>
-					        	</div>
+				        	<div class="col-md-6">
+				        		<dl>
+				        			<dt>White</dt>
+				        			<dd><strong>A</strong> Pinot Grigio, Sauvignon Blanc</dd>
+				        			<dd><strong>B</strong> Gewurztraminer, Riesling</dd>
+						            <dd><strong>C</strong> Chardonnay</dd>
+						        </dl>
 					        </div>
 	      				</div>
 	      			</div>
 	      		</div>
 	      		<div class="row show-grid">
-	      			<div class="col-md-6 col-sm-12 col-xs-12 well foursons">
+	      			<div class="col-md-12 col-sm-12 col-xs-12 well foursons">
 	      				<div class="row well-foursons">
 		      				<h2>Ice Wine $160/190 <small>6 weeks</small></h2>
 	      				</div>
@@ -153,7 +95,9 @@
 		      				</div>	
 	      				</div>
 	      			</div>
-	      			<div class="col-md-6 col-sm-12 col-xs-12 well foursons">
+	      		</div>
+	      		<div class="row show-grid">
+	      			<div class="col-md-12 col-sm-12 col-xs-12 well foursons">
 	      				<div class="row well-foursons">
 	      					<h2>Rose/Blush $150 <small>4 - 6 weeks</small></h2>
 	      				</div>

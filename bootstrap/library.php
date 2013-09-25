@@ -22,23 +22,29 @@
 	define('PRODUCT', 'Our Wines');
 	define('RESERVE', 'Make A Reservation');
 	define('QUOTE', 'Still Buying Wine? Make Wine Today!');
+	define('ORDER_SUBJECT', 'You have received a new order.');
+	define('ORDER_CONFIRMATION', 'Appointment Confirmed with Foursons Winemakers');
+	define('CUSTOMER_SUB1', '[GENERAL]');
+	define('CUSTOMER_SUB2', '[SUGGESTION]');
+	define('CUSTOMER_SUB3', '[PRODUCT SUPPORT]');
+	define('FOURSONS_EMAIL', 'info@sweetlemonie.com');
+	define('FOURSONS_ADDRESS1', '5 Glen Cameron Rd. Unit 21');
+	define('FOURSONS_ADDRESS2', 'Thornhill, ON, L3T 5W2');
+
 	/* Foursons Winemaker Definitions End */
 
-	define('LOGIN', 'Log In');
-	define('RSVP', 'RSVP');
-	define('GUESTMGR', 'Guest Manager');
-	define('TY', 'Thank You');
-	define('VIEW', 'View Guests');
-	define('GR', 'Groom');
-	define('BR', 'Bride');
-	define('NOTATND', 'Not Attending');
-	define('NOANSW', 'Not Answered');
-	define('ADMIN', 'Admin Page');
-	define('LOGINHEADING', 'RSVP');
-	define('REENTER', 'Invalid E-Mail Address or password. <br />Please try again.');
-	define('YES', 'Yes');
-	define('NO', 'No');
-	
+	/* Foursons Winemaker Hours Start */
+
+	define('MONDAY_HOURS', '9:00AM - 7:00PM');
+	define('TUESDAY_HOURS', '9:00AM - 7:00PM');
+	define('WEDNESDAY_HOURS', '9:00AM - 7:00PM');
+	define('THURSDAY_HOURS', '9:00AM - 7:00PM');
+	define('FRIDAY_HOURS', '9:00AM - 7:00PM');
+	define('SATURDAY_HOURS', '9:00AM - 7:00PM');
+	define('SUNDAY_HOURS', '9:00AM - 7:00PM');
+
+	/* Foursons Winemaker Hours End */
+
 	/* Functions for Log In Start */
 
 	// checks if there exists a session id uname and returns result
