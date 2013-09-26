@@ -1,23 +1,21 @@
 <?php include('header.php'); 
 ?>
 			<div class="progress">
-  				<div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%;">
-  					Order Process Completed : 0%
+  				<div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="width: 25%;">
+  					Order Process Completed : 25%
   				</div>
 			</div>
-			<div class="well">
-			<form class="form-inline" role="form" id="reserveForm" name="reserveForm" action="pickwine.php" method="post">
-				<div class="row">
-					<div class="col-md-6 col-md-offset-3 col-xs-12 col-sm-12">
-						<h1>Start Your Order</h1>
-					</div>
-				</div><br />
-				<div class="row">
-					<div class="col-md-6 col-md-offset-3 col-xs-12 col-sm-12">
-						<label>Pick A Date and Time To Schedule Your Drop In Date</label>
+			<div class="well well-foursons">
+			<form class="form-inline" role="form" id="reserveForm" name="reserveForm" action="reservation.php" method="post">
+				<input type="hidden" name="price" value="<?php echo $_POST["price"]; ?>">
+				<input type="hidden" name="wine" value="<?php echo $_POST["wine"]; ?>">
+				<input type="hidden" name="quality" value="<?php echo $_POST["quality"]; ?>">
+				<div class="row jumbotron">
+					<div class="container">
+						<h1>Schedule Your Drop In Date</h1>
+						<p>To start wine crafting process, you will need to drop in to take care of the next important thing, yeast dropping and making payment.</p>
 					</div>
 				</div>
-				<br /><br />
 				<div class="row">
 					<div class="col-md-6 col-md-offset-4 col-xs-12 col-sm-12">
 						<div class="form-group">
@@ -71,7 +69,7 @@
 					<div class="col-md-2 col-xs-12">
 						<button class="btn btn-default form-control" type="submit" formaction="index.php">Cancel</button>
 					</div>
-				</div>
+				</div><br />
   			</form>
   			<script>
 

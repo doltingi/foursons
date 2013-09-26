@@ -1,5 +1,4 @@
 <?php include('header.php'); ?>
-      		<h3>Contact Us</h3>
       		<div class="row">
       			<div class="col-md-3 col-sm-12 col-xs-12 well foursons">
               <div class="row">

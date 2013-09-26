@@ -1,5 +1,5 @@
 <?php include('library.php'); 
-if (basename($_SERVER["PHP_SELF"]) == "confirmation.php" || basename($_SERVER["PHP_SELF"]) == "reservation.php" || basename($_SERVER["PHP_SELF"]) == "pickwine.php") {	
+if (basename($_SERVER["PHP_SELF"]) == "confirmation.php" || basename($_SERVER["PHP_SELF"]) == "reservation.php" || basename($_SERVER["PHP_SELF"]) == "pickdate.php") {	
 	if ($_SERVER["REQUEST_METHOD"] != "POST") {
 		header('Location:index.php');
 	}
@@ -32,13 +32,25 @@ if (basename($_SERVER["PHP_SELF"]) == "confirmation.php" || basename($_SERVER["P
 		<link rel="apple-touch-icon-precomposed" sizes="114x114" href="ico/apple-touch-icon-114-precomposed.png">
 		<link rel="apple-touch-icon-precomposed" sizes="72x72" href="ico/apple-touch-icon-72-precomposed.png">
 		<link rel="apple-touch-icon-precomposed" href="ico/apple-touch-icon-57-precomposed.png">
-		<link rel="shortcut icon" href="ico/favicon.png">
+		<link rel="shortcut icon" href="favicon.png">
 	</head>
 
 	<body>
+		<div id="fb-root"></div>
+		<script>
+			(function(d, s, id) {
+	  			var js, fjs = d.getElementsByTagName(s)[0];
+	  			if (d.getElementById(id)) return;
+	  			js = d.createElement(s); js.id = id;
+	  			js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+	  			fjs.parentNode.insertBefore(js, fjs);
+			}(document, 'script', 'facebook-jssdk'));
+		</script>
 		<div class="container">
 			<div class="masthead">
-	        	<h3 class="text-muted"><?php echo(TITLE) ?></h3>
+	        	<h3 class="text-muted"><?php echo(TITLE) ?>
+	        		<a href="https://www.facebook.com/FoursonsWineMaker" title="Visit Our Facebook">
+					<img src="ico/facebook-link.png" alt="To Our Facebook Page" width="20px" class="img-rounded pull-right"></a></h3>
 	            <div class="navbar-header">
 			       	<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav">
 						<span class="icon-bar"></span>
@@ -48,17 +60,20 @@ if (basename($_SERVER["PHP_SELF"]) == "confirmation.php" || basename($_SERVER["P
 						<span class="icon-bar"></span>
 				    </button>
 				</div>
-					<ul class="nav nav-justified">
-						<li <?php if (basename($_SERVER['PHP_SELF']) == 'index.php') { ?>class="active"<?php } ?>>
-							<a href="index.php"><?php echo(HOME) ?></a></li>
-						<li <?php if (basename($_SERVER['PHP_SELF']) == 'about.php') { ?>class="active"<?php } ?>>
-							<a href="index.php"><?php echo(ABOUT) ?></a></li>
-						<li <?php if (basename($_SERVER['PHP_SELF']) == 'products.php') { ?>class="active"<?php } ?>>
-							<a href="products.php"><?php echo(PRODUCT) ?></a></li>
-						<li <?php if (basename($_SERVER['PHP_SELF']) == 'reservation.php') { ?>class="active"<?php } ?>>
-							<a href="pickdate.php"><?php echo(RESERVE) ?></a></li>
-						<li <?php if (basename($_SERVER['PHP_SELF']) == 'contact.php') { ?>class="active"<?php } ?>>
-							<a href="contact.php"><?php echo(CONTACT) ?></a></li>
-					</ul>
+
+				<ul class="nav nav-justified">
+					<li <?php if (basename($_SERVER['PHP_SELF']) == 'index.php') { ?>class="active"<?php } ?>>
+						<a href="index.php"><?php echo(HOME) ?></a></li>
+					<li <?php if (basename($_SERVER['PHP_SELF']) == 'craft.php') { ?>class="active"<?php } ?>>
+						<a href="craft.php"><?php echo(CRAFT) ?></a></li>
+					<li <?php if (basename($_SERVER['PHP_SELF']) == 'products2.php') { ?>class="active"<?php } ?>>
+						<a href="products2.php"><?php echo(PRODUCT) ?></a></li>
+					<li <?php if (basename($_SERVER['PHP_SELF']) == 'pickwine.php' || basename($_SERVER['PHP_SELF']) == 'pickdate.php' 
+					|| basename($_SERVER['PHP_SELF']) == 'reservation.php' || basename($_SERVER['PHP_SELF']) == 'confirmation.php' ||
+					basename($_SERVER['PHP_SELF']) == 'reserved.php') { ?>class="active"<?php } ?>>
+						<a href="pickwine.php"><?php echo(RESERVE) ?></a></li>
+					<li <?php if (basename($_SERVER['PHP_SELF']) == 'contact.php' || basename($_SERVER['PHP_SELF']) == 'contacted.php') { ?>class="active"<?php } ?>>
+						<a href="contact.php"><?php echo(CONTACT) ?></a></li>
+				</ul>
 				<hr />
 			</div>
