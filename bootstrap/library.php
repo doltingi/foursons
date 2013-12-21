@@ -1,11 +1,4 @@
 <?php
-	// connects to the database
-	//$db_name = "fssto651_weddingPlanner";
-	//$db_username = "fssto651";
-	//$db_pwd = "Fsstoronto123";
-	//$db_con = mysql_connect("localhost", $db_username, $db_pwd) or die("There was an error connecting");
-
-	//mysql_select_db($db_name) or die("There was an error in selecting the database.");
 
 	session_start();
 
@@ -18,29 +11,26 @@
 	define('SLIDER_IMAGE3', 'slide-03.jpg');
 	define('HOME', 'Home');
 	define('CRAFT', 'Why Craft?');
+	define('MAKING', 'Making Wine');
 	define('CONTACT', 'Contact Us');
 	define('PRODUCT', 'Our Wines');
-	define('RESERVE', 'Make A Reservation');
+	define('RESERVE', 'Reserve Now');
 	define('QUOTE', 'Still Buying Wine? Make Wine Today!');
 	define('ORDER_SUBJECT', 'You have received a new order.');
 	define('ORDER_CONFIRMATION', 'Appointment Confirmed with Foursons Winemakers');
 	define('CUSTOMER_SUB1', '[GENERAL]');
 	define('CUSTOMER_SUB2', '[SUGGESTION]');
 	define('CUSTOMER_SUB3', '[PRODUCT SUPPORT]');
-	define('FOURSONS_EMAIL', 'info@sweetlemonie.com');
-	define('FOURSONS_ADDRESS1', '5 Glen Cameron Rd. Unit 21');
+	define('FOURSONS_EMAIL', 'foursonswinemaker@gmail.com');
+	define('FOURSONS_ADDRESS1', '5 Glen Cameron Rd. Unit 21A');
 	define('FOURSONS_ADDRESS2', 'Thornhill, ON, L3T 5W2');
+	define('FOURSONS_PHONE', '(647) 847-6977');
 
 	/* Foursons Winemaker Definitions End */
 
 	/* Foursons Winemaker Hours Start */
 
-	define('MONDAY_HOURS', '9:00AM - 7:00PM');
-	define('TUESDAY_HOURS', '9:00AM - 7:00PM');
-	define('WEDNESDAY_HOURS', '9:00AM - 7:00PM');
-	define('THURSDAY_HOURS', '9:00AM - 7:00PM');
-	define('FRIDAY_HOURS', '9:00AM - 7:00PM');
-	define('SATURDAY_HOURS', '9:00AM - 7:00PM');
+	define('WORKING_HOURS', '10:00AM - 7:00PM');
 	define('SUNDAY_HOURS', 'CLOSED');
 
 	/* Foursons Winemaker Hours End */
@@ -75,18 +65,24 @@
 	define('T_GRE', 'Green Apple');
 	define('T_STR', 'Strawberry White');
 	define('T_ZIN', 'Zinfandel');
-	define('T_BLU', 'Blush');
+	define('T_RAS', 'Raspberry White');
+	define('T_BLU', 'Blueberry');
+	define('T_BLI', 'Bliss');
+	define('T_BLACK', 'Blackberry');
+	define('T_BLA', 'Blast');
+	define('T_POM', 'Pomegranate');
+	define('T_WIW', 'Wildberry Wave');
 	
 	/* Foursons Winemaker Wine Titles End */
 
 	/* Foursons Winemaker Wine Descriptions Start */
 
 	define('D_NZPN', 'Elevated aromas of plump red cherries, bitter chocolate and spice define the intense varietal character of this full-bodied wine. Fermented on Hungarian oak cubes and winery grade yeast, the palate is rich and oaky supported by blackberries and herb flavours layered over silky, integrated tannins.');
-	define('D_CMAL', 'With spicy &amp; herbaceous aromas and a hint of tobacco, this medium to full bodied Malbec is rounded by an elegant palate of dried red fruits with lingering earthiness. Fermentation on GenuWine Winery Dried Grape Skins and American &amp; French oak chips round the finish.');
+	define('D_CMAL', 'With spicy & herbaceous aromas and a hint of tobacco, this medium to full bodied Malbec is rounded by an elegant palate of dried red fruits with lingering earthiness. Fermentation on GenuWine Winery Dried Grape Skins and American & French oak chips round the finish.');
 	define('D_CMER', 'This full-bodied wine is fermented on Genuwine Winery Dried Grape Skins and heavy toasted French oak shavings. It offers elevated succulent juicy berry flavours accentuated by delicate aroma notes of coffee and vanilla.');
 	define('D_AMAD', 'Fermented on Genuwine Winery Dried Grape Skins and toasted French oak chips, this is an assertively full-bodied wine with a delectable nose of black cherries, dark chocolate and well balanced oak. It offers ripe dark fruit flavours cradled by firm tannins culminating in an almost endless finish.');
 	define('D_CCSA', 'This richly built wine is fermented on Genuwine Winery Dried Grape Skins and heavy toasted American oak chips lending intricate layers of luscious black currants and cherries followed by black pepper laced with toasted oak.');
-	define('D_CSYR', 'Bold and assertive, the bouquet is vibrant with notes of blackcurrants, rich leather, and pepper spice laced with strong toasted oak. Fermentation on GenuWine Winery Grape Skins reveals bold overtones of dark chocolate, spice and an abundance of bold, chewy tannins.');
+	define('D_ASYR', 'Bold and assertive, the bouquet is vibrant with notes of blackcurrants, rich leather, and pepper spice laced with strong toasted oak. Fermentation on GenuWine Winery Grape Skins reveals bold overtones of dark chocolate, spice and an abundance of bold, chewy tannins.');
 	define('D_ASBL', 'Tropical and citrus fruits are in the bouquet of this unique, medium to full-bodied Sauvignon Blanc with a hint of herbacity on the nose. This exciting and complex wine bursts with flavours of pineapple, passionfruit and stonefruit with a hint of herbaceousness. The finish offers a refreshing zing of acidity.');
 	define('D_IPGR', 'Deeply aromatic with ripe pear, lychee and honey on the nose, this wine lures you to take a sip. Beautifully balanced flavours of ripe juicy pear and stone fruit tantalize the palate and lead to an enduring finish.');
 	define('D_GRGE', 'This Riesling Gewürztraminer blend offers apples, spice and a hint of minerals enticing the nose. Slightly off dry with perfectly balanced acidity, flavours of citrus, floral and honey linger gracefully on the palate.');
@@ -114,14 +110,17 @@
 	define('D_GEWU', 'Extremely spicy in flavour and aroma, this wine will tantalize any palate. Well aged, it becomes truly distinctive.');
 	define('D_RIES', 'Clean, crisp and slightly fruity, this German-style wine is full of flavour with an intense aroma.');
 	define('D_CHAR', 'A full-bodied wine with crisp, green apple bouquet and hearty flavour.');
-	define('D_CFRA', '');
-	define('D_RIES2', '');
-	define('D_VIDA', '');
+	define('D_CFRA', 'Its glistening ruby red colour will catch y our eye while its nose promises a mouth watering experience. Your palate will be overcome with flavours of sweet and tart red berries and apricots. A lingering honey finish will have you craving more. The rich berry flavours will pair perfectly with chocolate covered strawberries or your favourite dark chocolate dessert.');
+	define('D_RIES2', 'A must for every wine cellar, Ice Wine is the perfect end to any meal and a great addition to your favourite cocktails. Riesling’s acidity adds the perfect balance to the intense sweetness. Sinfully delicious with intense apricots, apples and pear son the nose, following through to tempting flavours of honey and lychee that linger on the palate.');
+	define('D_VIDA', 'This golden nectar is full of peach and tropical fruit with a perfectly balanced, honey-like sweetness.');
 	define('D_ZBLU', 'This blush wine offers the succulent, mouth-watering flavours of sweet, ripe raspberries blended gracefully with a delectable refreshing rosé.');
 	define('D_GAGE', 'This popular, pale straw-coloured wine is intensely flavourful, reminiscent of a freshly cut green apple. The pleasant soft acidity and luscious, fruity aroma of this crisp wine make it a great refresher for a hot summer day.');
-	define('D_SWZI', 'This refreshing blush wine presents stimulating strawberry aromas framed against an uplifting off dry palate of ripe red fruit and crisp acidity.');
 	define('D_KMPG', 'Light bodied and easy drinking, this wine captures the mouth-watering flavours of freshly cut honeydew melon and juicy watermelon. Perfectly balanced with a hint of tartness from kiwi fruit, this wine possesses a long fruity finish.');
-
+	define('D_RWZI', 'This blush wine offers the succulent, mouth-watering flavours of sweet, ripe raspberries blended gracefully with a delectable refreshing rosé.');
+	define('D_SWZI', 'This refreshing blush wine presents stimulating strawberry aromas framed against an uplifting off dry palate of ripe red fruit and crisp acidity.');
+	define('D_BLUE', 'Experience the exciting combination of freshly picked blueberries with a delicate touch of tannins and structure. This off-dry red wine is best enjoyed chilled on a warm summer day.');
+	define('D_BLAC', 'Reward your passion for intense exotic flavours with this garnet-coloured red wine. Colourful tastes of juicy blackberries and ripe currants round out a truly flavourful experience to share with friends.');
+	define('D_POME', 'This red wine brings together juicy and sweet flavours of wildberries and the rich and crisp notes of orchard fresh pomegranates. This delicious elixir is best enjoyed chilled.');
 	/* Foursons Winemaker Wine Descriptions End */
 
 	/* Functions for Log In Start */
@@ -130,181 +129,3 @@
 	function check_login() {
 		return isset($_SESSION["uname"]);
 	}
-
-	// log in procedure
-
-	function login_to_db($uname, $pword) {
-		$success = false;
-		$role = 0;
-
-		// extracts a row from users table that matches user name from the input.
-		// the input has been securely enhanced by using mysql_real_escape_string()
-
-		$qry = sprintf("SELECT password, role FROM guestList WHERE refId='%s'", mysql_real_escape_string($uname));
-		$qry_res = mysql_query($qry) or die ("There was an error selecting a row from user table.<br />".mysql_error());
-
-		// if there is a row extracted, there is a user id that matches the input by the user
-		if (mysql_num_rows($qry_res) == 1) {
-			$row = mysql_fetch_array($qry_res);
-			// holds values from the extracted row
-			$encrypted_pw = $row["password"];
-			$role = $row["role"];
-			// compare the encrypted password
-			if ($encrypted_pw == md5($pword)) {
-				$success = true;
-				// sets the attempt to true, and stores session values accordingly
-				setcookie ("PHPSESSID", session_id(), time() + 600);
-				$_SESSION["uname"] = $uname;
-				$_SESSION["role"] = $role;
-			}
-		}
-		// otherwise, login attempt failed
-		return $success;
-	}
-
-	/* Functions for Log In End */
-
-	/* Printing footer */
-	function print_footer() {
-		$content = "<div id=\"footer\">";
-		$content .= "\n\t\t\tCopyright &copy; 2013 SLCY";
-		$content .= "\n\t\t</div>\n";
-		echo $content;
-	}
-
-	/* rendering menu at admin page */
-	function render_menu($id) {
-		$menu_html =  "<div class='navbar-inner'><div class='container'><a class='brand' href='admin.php'>Simon and Jenny's Wedding</a><ul class='nav'>";
-
-  		$menu_html = $menu_html. 
-
-  		                      "<li class='dropdown'>
-                        <a href='#' class='dropdown-toggle' data-toggle='dropdown'><i class='icon-list'></i>&nbsp;View Lists <b class='caret'></b></a>
-                        <ul class='dropdown-menu'>
-                          <li><a href='guest_list.php?id=bride'>Bride's List</a></li>
-                          <li><a href='guest_list.php?id=groom'>Groom's list</a></li>
-                          <li class='divider'></li>
-                          <li><a href='guest_list.php?id=noShow'>No show list</a></li>
-                          <li><a href='guest_list.php?id=noAnswer'>No answer list</a></li>
-
-                        </ul>
-                      </li></ul>";
-  		$menu_html = $menu_html."<ul class='nav pull-right'><li><a href='logout.php'><i class='icon-off'></i>&nbsp;Logout</a></li></ul></div></div>";
-  		return $menu_html;
-	}
-	
-	function fillinTable($id) {
-		if ($id == 'bride' || $id == 'groom') {
-			$sql = "select a.refId, a.firstName, a.lastName, b.phone, b.email, b.attending, b.bringGuest, b.guestName, b.vegetarian, b.guestVeg from guestList a inner join guestResponse b on a.refId = b.refId where a.role = '0' and a.guestOf ='$id' and b.attending = '1'";
-	  	} else {
-	  		if ($id == 'noShow') {
-	  			$sql = "select a.refId, a.firstName, a.lastName, b.phone, b.email, b.attending, b.bringGuest, b.guestName, b.vegetarian, b.guestVeg from guestList a inner join guestResponse b on a.refId = b.refId where a.role = '0' and b.attending = '0'";
-	  		} 
-	  		if ($id == 'noAnswer') {
-	  			$sql = "SELECT refId, firstName, lastName, guestOf FROM guestList WHERE role=0 AND refId NOT IN (SELECT refId FROM guestResponse)";
-	  		}
-	  	}
-	  	$result = mysql_query($sql);
-	  	$html_table_contents = '';
-	  	if ($result) {
-	  		while ($row = mysql_fetch_array($result)) {
-	  			$refId = $row['refId'];
-	  			$name = $row['lastName'].", ".$row['firstName'];
-	  			$guest_name = $row['guestName'];
-	  			$guest = '';
-	  			$guestOf = $row['guestOf'];
-	  			$isVegetarian = '';
-	  			$guestVegetarian = '';
-
-	  			if ($row['bringGuest'] == '1') {
-	  				$guest = YES;
-	  			} else {
-	  				$guest = NO;
-	  			}
-
-	  			if ($row['vegetarian'] == '1') {
-	  				$isVegetarian = YES;
-	  			} else {
-	  				$isVegetarian = NO;
-	  			}
-
-				if ($row['guestVeg'] == '1') {
-	  				$guestVegetarian = YES;
-	  			} else {
-	  				$guestVegetarian = NO;
-	  			}
-	  			if ($id == 'bride' || $id == 'groom') {
-	  				$html_table_contents = $html_table_contents."<tr><td>".$refId."</td><td>".$name."</td><td>".$row['email']."</td><td>".$isVegetarian."</td><td>".$guest."</td><td>".$guest_name."</td><td>".$guestVegetarian."</td></tr>";
-	  			} else {
-	  				if ($id == 'noShow') {
-	  					$html_table_contents = $html_table_contents."<tr><td>".$refId."</td><td>".$name."</td><td>".$row['email']."</td></tr>";
-	  				}
-	  				if ($id == 'noAnswer') {
-	  					$html_table_contents = $html_table_contents."<tr><td>".$refId."</td><td>".$name."</td><td>".$guestOf."</td></tr>";
-	  				}
-
-	  			}	
-	  		}
-	  	}
-	  	return $html_table_contents;
-	}
-
-	function validate() {
-		$content = "";
-		$flag = FALSE;
-		if (trim($_POST["emailadd"]) == "") {
-			$content .= "Please enter email address.";
-			$flag = TRUE;
-		}
-		if (trim($_POST["phone"]) == "") {
-			$content .= "Please enter phone number.";
-			$flag = TRUE;
-		}
-		if ($_POST["attending"] == 1 && $_POST["guest"] == 1 && trim($_POST["guestName"]) == "") {
-			$content .= "Please fill in the name of the companion.";
-			$flag = TRUE;
-		}
-		if ($_POST["guest"] == 0 &&  trim($_POST["guestName"]) != "") {
-			$content .= "You specified a guest name when you have selected you will not be bringing any.";
-			$flag = TRUE;
-		}
-		if (!filter_var($_POST["emailadd"], FILTER_VALIDATE_EMAIL)) {
-			$content .= "Please enter a valid email address.";
-			$flag = TRUE;
-		}
-		if ($flag)
-			return $content;
-		else
-			return NULL;
-	}
-
-	/*
-	 * Retrieves whether the user is given permission to bring guest or not.
-	 */
-	function retrieve_bringGuest($userId) {
-
-		$qry = sprintf("SELECT bringGuest FROM guestList WHERE refId='%s'", mysql_real_escape_string($userId));
-	  	$qry_res = mysql_query($qry) or die ("There was an error selecting a row from user table.<br />".mysql_error());
-	  	$res = NULL;
-
-	  	// retrieve the user's bringGuest result and return
-	  	if (mysql_num_rows($qry_res) == 1) {
-	  		$row = mysql_fetch_array($qry_res);
-	  		$res = $row["bringGuest"];
-	  	}
-	  	return $res;
-	}
-
-	function retrieve_guest($userId) {
-		$qry = sprintf("SELECT refId, firstName, lastName, phone, email, attending, r.bringGuest, guestName, vegetarian, guestVeg FROM guestList LEFT JOIN guestResponse r USING (refId) WHERE refId='%s'", mysql_real_escape_string($userId));
-		$qry_res = mysql_query($qry) or die ("There was an error selecting a row from user table.<br />".mysql_error());
-
-	  	// retrieve the user's bringGuest result and return
-	  	if (mysql_num_rows($qry_res) == 1) {
-	  		$row = mysql_fetch_array($qry_res);
-	  		return $row;
-	  	} else {
-	  		return NULL;
-	  	}
-	}
-?>
