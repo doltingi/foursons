@@ -1,4 +1,4 @@
-<?php if ($_SERVER["REQUEST_METHOD"] != "post") {
+<?php if ($_SERVER["REQUEST_METHOD"] != "POST") {
 	$loc = 'Location: index.php';
 		header($loc);
 } ?>
@@ -14,7 +14,7 @@
 		<!-- <meta name="viewport" content="user-scalable=no"> -->
 		<!-- Le styles -->
 		<link href="css/bootstrap.css" rel="stylesheet">
-		<link href="css/fs2.css" rel="stylesheet">
+		<link href="css/fs.css" rel="stylesheet">
 		<link rel="shortcut icon" href="favicon.png" type="image/png">
 		<script type="text/javascript" src="js/jquery.js"></script>
 		<script type="text/javascript" src="js/bootstrap.js"></script>
@@ -34,16 +34,19 @@
 		<link href='http://fonts.googleapis.com/css?family=Marck+Script' rel='stylesheet' type='text/css'>
 	</head>
 	<body>
-		<?php include('header.php'); ?>
+<?php include('header.php'); ?>
+
 		<div class="container">
 		</div>
 		<section class="content">
 			<div class="container">
-				<?php include('content/confirmation.php'); ?>
+<?php include('content/confirmation.php'); ?>
+
 			</div>
 		</section>
 		<div class="container">
-			<?php include('footer.php'); ?>
+<?php include('footer.php'); ?>
+
 		</div>
 	</body>
 </html>

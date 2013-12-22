@@ -60,7 +60,7 @@
 								</div>
 								<div class="row">
 									<div class="col-md-12 col-sm-12 col-xs-12 text-center">
-										<br />Read descriptions of all of our <a target="_blank" href="content/winelist.php?f=Deluxe">Deluxe wine list</a>.
+										<br />Read descriptions of all of our <a target="_blank" href="winelist.php?f=Deluxe">Deluxe wine list</a>.
 									</div>
 								</div>
 							</div>
@@ -97,7 +97,7 @@
 								</div>
 								<div class="row">
 									<div class="col-md-12 col-sm-12 col-xs-12 text-center">
-										<br />Read descriptions of all of our <a target="_blank" href="content/winelist.php?f=Premium">Premium wine list</a>.
+										<br />Read descriptions of all of our <a target="_blank" href="winelist.php?f=Premium">Premium wine list</a>.
 									</div>
 								</div>								
 							</div>
@@ -135,7 +135,7 @@
 								</div>
 								<div class="row">
 									<div class="col-md-12 col-sm-12 col-xs-12 text-center">
-										<br />Read descriptions of all of our <a target="_blank" href="content/winelist.php?f=Regular">Regular wine list</a>.
+										<br />Read descriptions of all of our <a target="_blank" href="winelist.php?f=Regular">Regular wine list</a>.
 									</div>
 								</div>
 							</div>
@@ -164,7 +164,7 @@
 								</div>
 								<div class="row">
 									<div class="col-md-12 col-sm-12 col-xs-12 text-center">
-										<br />Read descriptions of all of our <a target="_blank" href="content/winelist.php?f=IceWine">Ice Wine list</a>.
+										<br />Read descriptions of all of our <a target="_blank" href="winelist.php?f=IceWine">Ice Wine list</a>.
 									</div>
 								</div>
 							</div>
@@ -193,7 +193,7 @@
 								</div>
 								<div class="row">
 									<div class="col-md-12 col-sm-12 col-xs-12 text-center">
-										<br />Read descriptions of all of our <a target="_blank" href="content/winelist.php?f=Rose">Rose wine list</a>.
+										<br />Read descriptions of all of our <a target="_blank" href="winelist.php?f=Rose">Rose wine list</a>.
 									</div>
 								</div>
 							</div>

@@ -11,7 +11,7 @@
 					</div>
 				</div>
 				<hr />
-				<form method="post" action="reservation.php">
+				<form method="post" action="confirmation.php">
 					<div id="new_order">
 						<div class="row">
 							<div class="col-md-12 col-sm-12 col-xs-12 text-center">
@@ -21,53 +21,55 @@
 						<fieldset>
 							<legend class="wine_title">Contact Information</legend>
 							<div class="row">
+								<br />
 								<div class="col-md-2 col-md-offset-2 col-xs-3 col-sm-3 wine_title text-right">
-									<h4>Name :</h4>
+									<h4>Name</h4>
 								</div>
 								<div class="col-md-4 col-md-offset-1 col-xs-9 col-sm-9">
-									<input type="text" class="form-control" name="name" id="name" placeholder="Full name here..." />
+									<input type="text" class="form-control" name="name" id="name" placeholder="Full name here..." required />
 								</div>
 							</div>
 							<div class="row">
 								<div class="col-md-2 col-md-offset-2 col-xs-3 col-sm-3 wine_title text-right">
-									<h4>Email :</h4>
+									<h4>Email</h4>
 								</div>
 								<div class="col-md-4 col-md-offset-1 col-xs-9 col-sm-9">
-									<input type="text" class="form-control" name="email" id="email" placeholder="Email address here..." />
+									<input type="text" class="form-control" name="email" id="email" placeholder="Email address here..." required />
 								</div>
 							</div>
 							<div class="row">
 								<div class="col-md-2 col-md-offset-2 col-xs-3 col-sm-3 wine_title text-right">
-									<h4>Phone :</h4>
+									<h4>Phone</h4>
 								</div>
 								<div class="col-md-4 col-md-offset-1 col-xs-9 col-sm-9">
-									<input type="text" class="form-control" name="phone" id="phone" placeholder="Phone number here..." />
+									<input type="text" class="form-control" name="phone" id="phone" placeholder="Phone number here..." required />
 								</div>
-							</div>
+							</div><br />
 						</fieldset>
 						<fieldset>
 							<legend class="wine_title">Order Information</legend>
 							<div class="row">
+								<br />
 								<div class="col-md-2 col-md-offset-2 col-xs-3 col-sm-3 wine_title text-right">
-									<h4>Quality :</h4>
+									<h4>Quality</h4>
 								</div>
 								<div class="col-md-4 col-md-offset-1 col-xs-9 col-sm-9">
 									<select id="quality" name="quality" class="form-control selectpicker">
-										<option value="dRed">Deluxe - Red</option>
-										<option value="dWhite">Deluxe - White</option>
-										<option value="pRed">Premium - Red</option>
-										<option value="pWhite">Premium - White</option>
-										<option value="rRed">Regular - Red</option>
-										<option value="rWhite">Regular - White</option>
-										<option value="iRed">Ice Wine - Red</option>
-										<option value="iWhite">Ice Wine - White</option>
-										<option value="rose">Rose/Blush</option>
+										<option value="Deluxe Red">Deluxe - Red</option>
+										<option value="Deluxe White">Deluxe - White</option>
+										<option value="Premium Red">Premium - Red</option>
+										<option value="Premium White">Premium - White</option>
+										<option value="Regular Red">Regular - Red</option>
+										<option value="Regular White">Regular - White</option>
+										<option value="Ice Wine Red">Ice Wine - Red</option>
+										<option value="Ice Wine White">Ice Wine - White</option>
+										<option value="Rose/Blush">Rose/Blush</option>
 									</select>
 								</div>
 							</div>
 							<div class="row">
 								<div class="col-md-2 col-md-offset-2 col-xs-3 col-sm-3 wine_title text-right">
-									<h4>Wine :</h4>
+									<h4>Wine</h4>
 								</div>
 								<div class="col-md-4 col-md-offset-1 col-xs-9 col-sm-9">
 									<select id="wine" name="wine" class="form-control selectpicker">
@@ -76,31 +78,32 @@
 							</div>
 							<div class="row">
 								<div class="col-md-2 col-md-offset-2 col-xs-3 col-sm-3 wine_title text-right">
-									<h4>Date :</h4>
+									<h4>Date</h4>
 								</div>
 								<div class="col-md-4 col-md-offset-1 col-xs-9 col-sm-9">
-									<input type="text" id="date" name="date" class="form-control" placeholder="Select a date here..." />
+									<input type="text" id="date" name="date" class="form-control" placeholder="Select a date here..." required />
 								</div>
 							</div>
 							<div class="row">
 								<div class="col-md-2 col-md-offset-2 col-xs-3 col-sm-3 wine_title text-right">
-									<h4>Time :</h4>
+									<h4>Time</h4>
 								</div>
 								<div class="col-md-4 col-md-offset-1 col-xs-9 col-sm-9">
 									<select id="time" name="time" class="form-control selectpicker">
 									</select>
 								</div>
 							</div>
+							<br />
 						</fieldset>
 					</div>
 					<hr />
 					<div class="row">
-						<div class="col-md-4 col-md-offset-4 col-sm-12 col-xs-12 text-center wine_title">
-							<a href="#ReserveModal" data-toggle="modal" class="btn btn-foursons form-control btn-lg">RESERVE NOW</a>
+						<div class="col-md-4 col-md-offset-4 col-sm-12 col-xs-12 text-center">
+							<button type="submit" class="btn btn-foursons form-control">Reserve Now</a>
 						</div>
 					</div>
 				</form>
-				<script>
+				<script type="text/javascript">
 					$(function() { //run on document.ready
 
 						var openHours = new Array();
@@ -123,7 +126,7 @@
 
 						var AorP = "AM";
 
-						$('#time').empty();
+						$("#time").empty();
 						for (var i = 0; i < openHours.length - 1; i++) {
 							for (var j = 0; j < openMinutes.length; j++) {
 								if (i > 2) {
@@ -207,74 +210,60 @@
 						$("#quality").change(function() {
 							var quality = $("#quality").val();
 							$("#wine").empty();
-							if (quality == "dRed") {
+							if (quality == "Deluxe Red") {
 								for (var i = 0; i < dRed.length; i++) {
 									$('<option/>', { value : dRed[i]}).text(dRed[i]).appendTo('#wine');
 								}
 								price = 210;
 							}
-							if (quality == "dWhite") {
+							if (quality == "Deluxe White") {
 								for (var i = 0; i < dWhite.length; i++) {
 									$('<option/>', { value : dWhite[i]}).text(dWhite[i]).appendTo('#wine');
 								}
 								price = 210;
 							}
-							if (quality == "pRed") {
+							if (quality == "Premium Red") {
 								for (var i = 0; i < pRed.length; i++) {
 									$('<option/>', { value : pRed[i]}).text(pRed[i]).appendTo('#wine');
 								}
 								price = 170;
 							}
-							if (quality == "pWhite") {
+							if (quality == "Premium White") {
 								for (var i = 0; i < pWhite.length; i++) {
 									$('<option/>', { value : pWhite[i]}).text(pWhite[i]).appendTo('#wine');
 								}
 								price = 170;
 							}
-							if (quality == "rRed") {
+							if (quality == "Regular Red") {
 								for (var i = 0; i < rRed.length; i++) {
 									$('<option/>', { value : rRed[i]}).text(rRed[i]).appendTo('#wine');
 								}
 								price = 135;
 							}
-							if (quality == "rWhite") {
+							if (quality == "Regular White") {
 								for (var i = 0; i < rWhite.length; i++) {
 									$('<option/>', { value : rWhite[i]}).text(rWhite[i]).appendTo('#wine');
 								}
 								price = 135;
 							}
-							if (quality == "iRed") {
+							if (quality == "Ice Wine Red") {
 								for (var i = 0; i < iRed.length; i++) {
 									$('<option/>', { value : iRed[i]}).text(iRed[i]).appendTo('#wine');
 								}
 								price = 160;
 							}
-							if (quality == "iWhite") {
+							if (quality == "Ice Wine White") {
 								for (var i = 0; i < iWhite.length; i++) {
 									$('<option/>', { value : iWhite[i]}).text(iWhite[i]).appendTo('#wine');
 								}
 								price = 160;
 							}
-							if (quality == "rose") {
+							if (quality == "Rose/Blush") {
 								for (var i = 0; i < rose.length; i++) {
 									$('<option/>', { value : rose[i]}).text(rose[i]).appendTo('#wine');
 								}
 								price = 150;
 							}
-							$("#lbl_price").text('$' + price);
-						});
-
-						$("#wine").change(function() { //this occurs when select 1 changes
-							if ($("#quality").val() == "iWhite") {
-								if ($("#wine").val() == "Vidal") {
-									price = 190;
-								} else {
-									price = 160;
-								}
-							}
-	            
-							$("#lbl_price").text('$' + price);
-							$("#price").val(price);
 						});
 					});
 				</script>

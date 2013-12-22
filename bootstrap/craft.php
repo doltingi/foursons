@@ -10,7 +10,7 @@
 	    <!-- <meta name="viewport" content="user-scalable=no"> -->
 	    <!-- Le styles -->
 	    <link href="css/bootstrap.css" rel="stylesheet">
-	    <link href="css/fs2.css" rel="stylesheet">
+	    <link href="css/fs.css" rel="stylesheet">
 	    <link rel="shortcut icon" href="favicon.png" type="image/png">
 	    <script type="text/javascript" src="js/jquery.js"></script>
 	    <script type="text/javascript" src="js/bootstrap.js"></script>

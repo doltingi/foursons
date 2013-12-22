@@ -10,13 +10,13 @@
 		<!-- <meta name="viewport" content="user-scalable=no"> -->
 		<!-- Le styles -->
 		<link href="css/bootstrap.css" rel="stylesheet">
-		<link href="css/fs2.css" rel="stylesheet">
+		<link href="css/fs.css" rel="stylesheet">
 		<link href="css/foursons/jquery-ui-1.10.3.custom.css" rel="stylesheet">
 		<link rel="shortcut icon" href="favicon.png" type="image/png">
 		<script type="text/javascript" src="js/jquery.js"></script>
 		<script type="text/javascript" src="js/bootstrap.js"></script>
 		<script type="text/javascript" src="js/jquery-ui-1.10.3.custom.js"></script>
-		<script>
+		<script type="text/javascript">
 			$(function() {
 				$("#date").datepicker(
 					{ 
@@ -43,16 +43,17 @@
 		<link href='http://fonts.googleapis.com/css?family=Marck+Script' rel='stylesheet' type='text/css'>
 	</head>
 	<body>
-		<?php include('header.php'); ?>
-		<div class="container">
-		</div>
+<?php include('header.php'); ?>
+		
 		<section class="content">
 			<div class="container">
-				<?php include('content/reserve.php'); ?>
+<?php include('content/reserve.php'); ?>
+
 			</div>
 		</section>
 		<div class="container">
-			<?php include('footer.php'); ?>
+<?php include('footer.php'); ?>
+
 		</div>
 	</body>
 </html>
