@@ -33,6 +33,5 @@
 	<body>
 <?php include("content/winelist.php"); ?>
 
-<?php include("footer.php"); ?>
 	</body>
 </html>
