@@ -11,7 +11,7 @@
 					</div>
 				</div>
 				<hr />
-				<form method="post" action="confirmation.php">
+				<form id="contact-form" method="post" action="confirmation.php">
 					<div id="new_order">
 						<div class="row">
 							<div class="col-md-12 col-sm-12 col-xs-12 text-center">
@@ -20,35 +20,34 @@
 						</div>
 						<fieldset>
 							<legend class="wine_title">Contact Information</legend>
-							<div class="row">
-								<br />
+							<div class="form-group row">
 								<div class="col-md-2 col-md-offset-2 col-xs-3 col-sm-3 wine_title text-right">
-									<h4>Name</h4>
+									<label><h4>Name</h4></label>
 								</div>
-								<div class="col-md-4 col-md-offset-1 col-xs-9 col-sm-9">
-									<input type="text" class="form-control" name="name" id="name" placeholder="Full name here..." required />
+								<div class="col-md-4 col-md-offset-1 col-xs-9 col-sm-9 input-group">
+									<input type="text" class="form-control" name="name" id="name" placeholder="Full name here..." />
 								</div>
 							</div>
-							<div class="row">
+							<div class="form-group row">
 								<div class="col-md-2 col-md-offset-2 col-xs-3 col-sm-3 wine_title text-right">
-									<h4>Email</h4>
+									<label><h4>Email</h4></label>
 								</div>
-								<div class="col-md-4 col-md-offset-1 col-xs-9 col-sm-9">
-									<input type="text" class="form-control" name="email" id="email" placeholder="Email address here..." required />
+								<div class="col-md-4 col-md-offset-1 col-xs-9 col-sm-9 input-group">
+									<input type="text" class="form-control" name="email" id="email" placeholder="Email address here..." />
 								</div>
 							</div>
-							<div class="row">
+							<div class="form-group row">
 								<div class="col-md-2 col-md-offset-2 col-xs-3 col-sm-3 wine_title text-right">
-									<h4>Phone</h4>
+									<label><h4>Phone</h4></label>
 								</div>
-								<div class="col-md-4 col-md-offset-1 col-xs-9 col-sm-9">
-									<input type="text" class="form-control" name="phone" id="phone" placeholder="Phone number here..." required />
+								<div class="col-md-4 col-md-offset-1 col-xs-9 col-sm-9 input-group">
+									<input type="text" class="form-control" name="phone" id="phone" placeholder="Phone number here..." />
 								</div>
 							</div><br />
 						</fieldset>
 						<fieldset>
 							<legend class="wine_title">Order Information</legend>
-							<div class="row">
+							<div class="form-group row">
 								<br />
 								<div class="col-md-2 col-md-offset-2 col-xs-3 col-sm-3 wine_title text-right">
 									<h4>Quality</h4>
@@ -67,7 +66,7 @@
 									</select>
 								</div>
 							</div>
-							<div class="row">
+							<div class="form-group row">
 								<div class="col-md-2 col-md-offset-2 col-xs-3 col-sm-3 wine_title text-right">
 									<h4>Wine</h4>
 								</div>
@@ -76,7 +75,7 @@
 									</select>
 								</div>
 							</div>
-							<div class="row">
+							<div class="form-group row">
 								<div class="col-md-2 col-md-offset-2 col-xs-3 col-sm-3 wine_title text-right">
 									<h4>Date</h4>
 								</div>
@@ -84,7 +83,7 @@
 									<input type="text" id="date" name="date" class="form-control" placeholder="Select a date here..." required />
 								</div>
 							</div>
-							<div class="row">
+							<div class="form-group row">
 								<div class="col-md-2 col-md-offset-2 col-xs-3 col-sm-3 wine_title text-right">
 									<h4>Time</h4>
 								</div>
@@ -267,3 +266,5 @@
 						});
 					});
 				</script>
+				<script src="js/jquery.validate.min.js"></script>
+				<script src="js/script.js"></script>
