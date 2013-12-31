@@ -45,7 +45,7 @@
 							</div><br />
 						</div>
 					</fieldset>
-					<hr />
+					<br />
 					<fieldset>
 						<legend class="wine_title">Confirm Your Order Information</legend>
 						<div class="well col-md-8 col-md-offset-2 col-xs-12 col-sm-12">
@@ -56,7 +56,7 @@
 								</div>
 								<div class="col-md-7 col-xs-12 col-sm-12">
 									<h5><?php echo $_POST["quality"]; ?> - <?php echo $_POST["wine"]; ?></h5>
-									<input type="hidden" name="wine" value="<?php echo $_POST["wine"]; ?>">
+									<input type="hidden" name="wine" value="<?php echo $_POST["quality"]; ?> <?php echo $_POST["wine"]; ?>">
 								</div>
 							</div>
 							<div class="row">
@@ -69,10 +69,19 @@
 									<input type="hidden" name="date" value="<?php echo $_POST["date"]; ?>">
 									<input type="hidden" name="time" value="<?php echo $_POST["time"]; ?>">
 								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-3 col-md-offset-2 col-xs-12 col-sm-12 wine_title text-right">
+									<h4>Comment</h4>
+								</div>
+								<div class="col-md-7 col-xs-12 col-sm-12">
+									<h5><?php echo $_POST["comment"] . "\n"; ?></h5>
+									<?php if($_POST["comment"]) { ?><input type="hidden" name="comment" value="<?php echo $_POST["comment"]; ?>"><?php } ?>
+								</div>
 							</div><br />
 						</div>
 					</fieldset>
-					<hr />
+					<br />
 					<div class="row">
 						<div class="col-md-2 col-md-offset-4 col-sm-12 col-xs-12">
 							<button class="btn btn-foursons form-control" type="submit">Confirm</button>

@@ -92,6 +92,15 @@
 									</select>
 								</div>
 							</div>
+							<div class="form-group row">
+								<div class="col-md-2 col-md-offset-2 col-xs-3 col-sm-3 wine_title text-right">
+									<h4>Comments (Optional)</h4>
+								</div>
+								<div class="col-md-4 col-md-offset-1 col-xs-9 col-sm-9">
+									<textarea name="comment" rows="6" resizeable="no" class="form-control"></textarea><br />
+									<h4><small>For additional orders, please leave your order in the comment above.</small></h4>
+								</div>
+							</div>
 							<br />
 						</fieldset>
 					</div>
