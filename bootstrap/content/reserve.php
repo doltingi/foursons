@@ -98,7 +98,7 @@
 								</div>
 								<div class="col-md-4 col-md-offset-1 col-xs-9 col-sm-9">
 									<textarea name="comment" rows="6" resizeable="no" class="form-control"></textarea><br />
-									<h4><small>For additional orders, please leave your order in the comment above.</small></h4>
+									<h5><small>For additional orders, please mention them in the comment above.</small></h5>
 								</div>
 							</div>
 							<br />

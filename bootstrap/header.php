@@ -13,16 +13,13 @@
 		Foursons Winemaker</a>
 				</div>
 				<div class="collapse navbar-collapse">
-					<ul class="nav navbar-nav wine_title">
+					<ul class="nav navbar-nav wine_title fs-header">
 						<li><a href="."><?php echo(HOME); ?></a></li>
 						<li><a href="craft.php"><?php echo(CRAFT); ?></a></li>
 						<li><a href="making.php"><?php echo(MAKING); ?></a></li>
 						<li><a href="products.php"><?php echo(PRODUCT); ?></a></li>
 						<li><a href="reserve.php"><?php echo(RESERVE); ?></a></li>
 						<li><a href="contactus.php"><?php echo(CONTACT); ?></a></li>
-					</ul>
-					<ul class="nav navbar-nav navbar-right wine_title">
-						<li><a>Have Questions? Call Us @ 647-847-6977</a></li>
 					</ul>
 				</div><!-- /.nav-collapse -->
 			</div><!-- /.container -->

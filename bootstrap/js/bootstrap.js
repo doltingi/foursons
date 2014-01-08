@@ -460,6 +460,10 @@ if (!jQuery) { throw new Error("Bootstrap requires jQuery") }
     return this
   }
 
+  $.fn.carousel.defaults = {
+    interval: false
+  , pause: 'hover'
+  }
 
   // CAROUSEL DATA-API
   // =================

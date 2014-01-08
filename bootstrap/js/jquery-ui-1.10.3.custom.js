@@ -1339,6 +1339,15 @@ $.extend(Datepicker.prototype, {
 		return [(day > 0 && day < 6), ""];
 	},
 
+	/* Set as beforeShowDay function to prevent selection of weekends.
+	 * @param  date  Date - the date to customise
+	 * @return [boolean, string] - is this date selectable?, what is its CSS class?
+	 */
+	noSundays: function(date) {
+		var day = date.getDay();
+		return [(day != 0), ""];
+	},
+
 	/* Set as calculateWeek to determine the week of the year based on the ISO 8601 definition.
 	 * @param  date  Date - the date to get the week for
 	 * @return  number - the number of the week within the year that contains this date

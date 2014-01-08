@@ -17,12 +17,17 @@
 		<script type="text/javascript" src="js/bootstrap.js"></script>
 		<script type="text/javascript" src="js/jquery-ui-1.10.3.custom.js"></script>
 		<script type="text/javascript">
-			$(function() {
+			jQuery(document).ready(function($){
 				$("#date").datepicker(
-					{ 
+					{
+					<?php if(date("N") > 5) { ?>
+						minDate: +<?php echo (10 - date("N")); ?>,
+					<?php } else { ?>
 						minDate: +2,
+					<?php }	?>			
 						maxDate: "+6M",
-						showAnim: "slideDown" 
+						showAnim: "slideDown",
+						beforeShowDay: $.datepicker.noSundays,
 					}
 				);
 			});

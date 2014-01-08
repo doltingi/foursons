@@ -31,7 +31,7 @@
 								</div>
 								<div class="col-md-7 col-xs-12 col-sm-12">
 									<h5><?php echo $_POST["phone"]; ?></h5>
-									<input type="hidden" name="phoneNum" value="<?php echo $_POST["phone"]; ?>">
+									<input type="hidden" name="phone" value="<?php echo $_POST["phone"]; ?>">
 								</div>
 							</div>
 							<div class="row">
@@ -56,7 +56,7 @@
 								</div>
 								<div class="col-md-7 col-xs-12 col-sm-12">
 									<h5><?php echo $_POST["quality"]; ?> - <?php echo $_POST["wine"]; ?></h5>
-									<input type="hidden" name="wine" value="<?php echo $_POST["quality"]; ?> <?php echo $_POST["wine"]; ?>">
+									<input type="hidden" name="wine" value="<?php echo $_POST["quality"]; ?> - <?php echo $_POST["wine"]; ?>">
 								</div>
 							</div>
 							<div class="row">

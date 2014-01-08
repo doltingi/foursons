@@ -112,14 +112,14 @@ fieldset[disabled] .btn-foursons.active {
 
 .navbar-brand {
   float: left;
-  font-size: 24px;
+  font-size: 26px;
 }
 
 .navbar-nav > li > a {
   padding-top: 15px;
   padding-bottom: 15px;
   line-height: 26px;
-  font-size: 16px;
+  font-size: 20px;
 }
 
 .making_heading {
@@ -140,6 +140,19 @@ fieldset[disabled] .btn-foursons.active {
   font-family: 'Marck Script', cursive;
 }
 
+.navbar-nav .fs-header {
+  font-size: 20px;
+}
+
 .panel-fs {
   border : 0px;
+}
+
+.fs-arrow {
+  color : #450007;
+}
+
+#Deluxe small, #Premium small, #Regular small, #IceWine small, #Rose small {
+  font-size : 34px;
+  color : #ffffff;
 }

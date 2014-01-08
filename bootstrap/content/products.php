@@ -24,7 +24,7 @@
 							<div class="panel-body">
 								<div class="row">
 									<div class="col-md-12 col-sm-12 col-xs-12 text-center">
-										Each month we select one type of wine from the REGULAR category to  go on special for $99
+										Each month we select one type of wine from the Regular category to  go on special for $99
 									</div>
 								</div>
 							</div>

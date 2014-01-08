@@ -16,12 +16,12 @@
 	define('PRODUCT', 'Our Wines');
 	define('RESERVE', 'Reserve Now');
 	define('QUOTE', 'Still Buying Wine? Make Wine Today!');
-	define('ORDER_SUBJECT', 'You have received a new order.');
-	define('ORDER_CONFIRMATION', 'Appointment Confirmed with Foursons Winemakers');
-	define('CUSTOMER_SUB1', '[GENERAL]');
-	define('CUSTOMER_SUB2', '[SUGGESTION]');
-	define('CUSTOMER_SUB3', '[PRODUCT SUPPORT]');
-	define('FOURSONS_EMAIL', 'foursonswinemaker@gmail.com');
+	define('ORDER_SUBJECT', 'You have received a new order');
+	define('ORDER_CONFIRMATION', 'Appointment Confirmed with Foursons Winemaker');
+	define('CUSTOMER_SUB1', '[GENERAL] Your Feedback is submitted REF#G');
+	define('CUSTOMER_SUB2', '[SUGGESTION] Your Feedback is submitted REF#S');
+	define('CUSTOMER_SUB3', '[PRODUCT SUPPORT] Your Feedback is submitted REF#P');
+	define('FOURSONS_EMAIL', 'info@fswinemaker.com');
 	define('FOURSONS_ADDRESS1', '5 Glen Cameron Rd. Unit 21A');
 	define('FOURSONS_ADDRESS2', 'Thornhill, ON, L3T 5W2');
 	define('FOURSONS_PHONE', '(647) 847-6977');

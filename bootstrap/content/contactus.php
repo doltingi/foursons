@@ -81,3 +81,5 @@
 					</div>
 				</form>
 				<hr />
+				<script src="js/jquery.validate.min.js"></script>
+				<script src="js/script.js"></script>
