@@ -68,6 +68,8 @@
 								<option value="sug">Suggestions</option>
 								<option value="prod">Product Support</option>
 							</select>
+							<label>Require Reply</label><br />
+							<input type="checkbox" name="reply" value="y"> Yes I want a reply from the vendor
 						</div>
 						<div class="col-md-9 col-sm-12 col-xs-12">
 							<label>Message</label>
